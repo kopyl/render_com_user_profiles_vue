@@ -19,7 +19,7 @@ export default {
     },
 
     beforeMount: function() {
-        this.getUsers()
+        // this.getUsers()
     },
 
     methods: {
