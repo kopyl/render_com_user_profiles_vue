@@ -1,5 +1,5 @@
 <template>
-    <h3>Users2:</h3>
+    <h3>Users4:</h3>
     <User :username=username v-for="{username} of users" :key='username'/>
 </template>
 
@@ -19,14 +19,14 @@ export default {
     },
 
     beforeMount: function() {
-        // this.getUsers()
+        this.getUsers()
     },
 
     methods: {
 
         async getUsers() {
-            let users = await fetch(this.URLS.usersAPI)
-            this.users = await users.json()
+            // let users = await fetch(this.URLS.usersAPI)
+            // this.users = await users.json()
 
             console.log('RENDER_EXTERNAL_HOSTNAME', process.env.RENDER_EXTERNAL_HOSTNAME)
             // console.log(presets)
