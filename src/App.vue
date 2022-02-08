@@ -13,7 +13,7 @@ export default {
         return {
             users: [],
             URLS: {
-                usersAPI: 'http://185.178.46.211:90/users'
+                usersAPI: 'https://render-com-user-profiles-flask.onrender.com/users'
             }
         }
     },
@@ -25,11 +25,8 @@ export default {
     methods: {
 
         async getUsers() {
-            // let users = await fetch(this.URLS.usersAPI)
-            // this.users = await users.json()
-
-            console.log('RENDER_EXTERNAL_HOSTNAME', process.env.RENDER_EXTERNAL_HOSTNAME)
-            // console.log(presets)
+            let users = await fetch(this.URLS.usersAPI)
+            this.users = await users.json()
         }
 
     },
