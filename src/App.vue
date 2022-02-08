@@ -1,5 +1,5 @@
 <template>
-    <h3>Users5:</h3>
+    <h3>Users6:</h3>
     <User :username=username v-for="{username} of users" :key='username'/>
 </template>
 
