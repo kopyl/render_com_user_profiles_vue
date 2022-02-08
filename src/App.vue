@@ -1,5 +1,5 @@
 <template>
-    <h3>Users:</h3>
+    <h3>Users2:</h3>
     <User :username=username v-for="{username} of users" :key='username'/>
 </template>
 
@@ -28,7 +28,7 @@ export default {
             let users = await fetch(this.URLS.usersAPI)
             this.users = await users.json()
 
-            // console.log('test2', process.env.NODE_ENV)
+            console.log('RENDER_EXTERNAL_HOSTNAME', process.env.RENDER_EXTERNAL_HOSTNAME)
             // console.log(presets)
         }
 
