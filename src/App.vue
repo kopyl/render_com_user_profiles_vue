@@ -13,7 +13,7 @@ export default {
         return {
             users: [],
             URLS: {
-                usersAPI: 'https://render-com-user-profiles-flask.onrender.com/users'
+                usersAPI: 'https://flask-api.onrender.com/users'
             }
         }
     },
